@@ -1,0 +1,25 @@
+{
+  "name": "promo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nvm-guard && nuxt build",
+    "start": "nvm-guard && nuxt start",
+    "export": "nvm-guard && nuxt export",
+    "serve": "nvm-guard && nuxt serve",
+    "eslint": "eslint --ext=vue .",
+    "deploy": "nvm-guard && npm run eslint && nuxt build && nuxt export"
+  },
+  "dependencies": {
+    "nuxt": "^2.13.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^2.0.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "nvm-guard": "^1.0.4"
+  }
+}
