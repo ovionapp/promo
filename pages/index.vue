@@ -1,16 +1,16 @@
 <template>
-  <div class="max-w-xl mx-auto">
+  <div class="max-w-md mx-auto">
     <div class="text-center pt-20">
-      <h1 class="text-6xl text-gray-900 uppercase font-bold tracking-wide py-16">
+      <h1 id="logo">
         Ovion
       </h1>
 
-      <h2 class="text-2xl text-gray-600 mb-40">
+      <h2 class="text-lg text-gray-600 mb-32">
         The CMS worth comitting to
       </h2>
 
-      <div id="subscribe" class="bg-gray-200 px-10 pt-10 pb-12 rounded-lg">
-        <h3 class="text-xl text-gray-700 pb-4">
+      <div id="subscribe" class="bg-gray-200 px-6 pt-10 pb-12 rounded-lg">
+        <h3 class="text-lg text-gray-700 pb-4">
           Subscribe to get early access
         </h3>
 
@@ -31,3 +31,23 @@
     </div>
   </div>
 </template>
+
+<style>
+#logo {
+  background-color: #101010;
+
+  @apply inline-block;
+  @apply text-4xl;
+  @apply text-gray-100;
+  @apply uppercase;
+  @apply font-bold;
+  @apply tracking-wide;
+
+  padding-top: 3.5rem;
+
+  @apply pb-16;
+  @apply px-6;
+  @apply rounded-lg;
+  @apply mb-8;
+}
+</style>
